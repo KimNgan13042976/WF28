@@ -1,0 +1,42 @@
+body{
+	background-color: #F0F8FF;
+	margin: 0;
+	padding: 0;
+	font-family: Verdana;
+	font-size: 0.9em;
+	line-height: 1.5em;
+
+}
+#main{
+	width: 1000px;
+	margin: 0 auto;
+
+}
+#head{
+	height: 120px;
+	background-color: #DCDCDC;
+}
+#menutop{
+	height: 35px;
+	background-color: 		#ADD8E6;
+}
+#mainconten{
+	float: right;
+	width: 100%;
+	
+}
+#conten{
+	margin-right: 300px;
+	background-color: #8FBC8F;
+}
+#right{
+	float: right;
+	width: 300px;
+	background-color: #8FBC8F;
+
+}
+#footer{
+	clear: both;
+	height: 100px;
+	background-color: 	#778899;
+}

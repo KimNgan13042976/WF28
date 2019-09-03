@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var m=parseInt(prompt("Nhập vào m:"));
+		var n=parseInt( prompt("Nhập vào n:"));
+		var k=parseInt(prompt("Nhập vào K:"));
+		 var tong=0;
+		for(var i=m+1;i<n;i++){
+			if(i % k==0){
+				tong += i;
+			}
+		}
+		document.write("tong cac so chia het cho " + k + " trong khoang tu " + m + " den " + n + " la: tong= " + tong);
+	</script>
+</body>
+</html>

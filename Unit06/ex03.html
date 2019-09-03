@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			position: relative;
+			background-color: red;
+			animation-name: changeColor;
+			animation-duration: 4s;
+			animation-direction: reverse;/*chạy theo ngược hướng */
+			animation-iteration-count: 4;
+		}
+		@keyframes changeColor{
+			0%{top:0;left: 0;background-color: yellow}
+			25%{top:0;left: 250px;background-color: blue}
+			50%{top:250px;left: 250px;background-color: green}
+			75%{top:250px;left: 0;background-color: pink}
+			100%{top:0;left: 0;background-color: red}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	
+</body>
+</html>
