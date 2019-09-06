@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p style="width: 70%">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error fugiat, dignissimos soluta repellendus blanditiis pariatur cum dolores unde nisi placeat.</p>
+	<div style="width: 300px;height: 100px;border: 2px solid black">
+	<div class="button" style="padding: 5%">
+		<p>Cỡ chữ </p>
+	<button id="btn-click">Mặc định</button>
+	<button id="btn-click1">Lớn </button>
+	<button id="btn-click2">Nhỏ</button>
+	</div>
+	</div>
+	<script >
+		
+
+		var button=document.getElementsByTagName('button')[0];
+		button.addEventListener('click',mặcđinh);
+		function mặcđinh(){
+			var p=document.getElementsByTagName('p')[0];
+			var fontSize=p.style.fontSize;
+			p.style.fontSize="20px";
+	}
+		var button=document.getElementsByTagName('button')[1];
+		button.addEventListener('click',lớn);
+		function lớn(){
+			var p=document.getElementsByTagName('p')[0];
+			var fontSize=p.style.fontSize;
+		p.style.fontSize="60px";
+	 
+	}
+	var button=document.getElementsByTagName('button')[2];
+		button.addEventListener('click',nhỏ);
+		function nhỏ(){
+			var p=document.getElementsByTagName('p')[0];
+			var fontSize=p.style.fontSize;
+			p.style.fontSize="10px";
+
+	}
+	</script>
+</body>
+</html>

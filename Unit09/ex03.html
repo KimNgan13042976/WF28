@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p onmouseover="changeColor()" onmouseout="changeColor2()">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ipsum totam quia incidunt sunt perspiciatis maxime voluptatum illo itaque cum.</p>
+	<script type="text/javascript">
+		function changeColor(){
+			document.getElementsByTagName('p')[0].style.color='red';
+			document.getElementsByTagName('p')[0].style.fontSize='50px';
+		}
+		function changeColor2(){
+			document.getElementsByTagName('p')[0].style.color='yellow';
+		}
+	</script>
+</body>
+</html> 

@@ -1,0 +1,89 @@
+.khung{
+			width: 500px;
+			height:400px;
+			margin: auto;
+		background-color: lightblue;
+			border:1px solid black;
+		}
+		.main1{
+			width: 100%;
+			height:12%;
+			border:1px solid black;
+		}
+		.left{
+			float: left;
+			margin-top: 11px;
+			width: 10%;
+			height:78%;
+		}
+		.right{
+			width: 90%;
+			height:100%;
+			float: left;
+		}
+		.right p{
+			float: left;
+			 margin-top: 10px;
+		}
+		.main2{
+			width: 100%;
+			height:12%;
+			border:1px solid black;
+		}
+		.left{
+			float: left;
+			margin-top: 11px;
+			width: 10%;
+			height:78%;
+		}
+		.right{
+			width: 90%;
+			height:100%;
+			float: left;
+		}
+		.right p{
+			float: left;
+			 margin-top: 10px;
+		}
+		.main3{
+			width: 100%;
+			height:12%;
+			border:1px solid black;
+		}
+		.left1{
+			float: left;
+			margin-top: -6px;
+			width: 15%;
+			height:78%;
+		}
+		.right{
+			width: 85%;
+			height:100%;
+			float: left;
+		}
+		.main4{
+			width: 100%;
+			height: 12%;
+			border:1px solid black;
+		}
+		.main5{
+			width: 100%;
+			height: 12%;
+			border:1px solid black;
+			
+		}
+		.main6{
+			width: 100%;
+			height: 12%;
+			border:1px solid black;
+		}
+		.main7{
+			width: 100%;
+			height: 12%;
+			border:1px solid black;
+		}
+		.main8{
+			width: 100%;
+			height: 12%;
+			border:1px solid black;
+		}

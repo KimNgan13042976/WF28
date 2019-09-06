@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>Thay đổi màu click</p>
+	<button id="btn-click"> Click me</button>
+	<button id="btn-click"> Click</button>
+	<script>
+		var button= document.getElementsByTagName('button')[0];
+		// //Cach1
+		// button.addEventListener('click',function(){
+		// 	var p= document.getElementsByTagName('p')[0];
+		// 	var color = p.style.color;
+		// 	if(color=='red'){
+		// 		p.style.color='black';
+		// 	}
+		// 	else{
+		// 		p.style.color='red';
+		// 	}
+		// });
+		//cách2
+		button.addEventListener('click',clickme);
+		function clickme(){
+			var p = document.getElementsByTagName('p')[0];
+			var color=p.style.color;
+			if(color=='red'){
+			 	p.style.color='black';
+			 }else{
+			 p.style.color='red';
+		}
+}
+	</script>
+</body>
+</html>

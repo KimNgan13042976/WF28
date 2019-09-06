@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input onfocus="changeBackgroundFocus()" onblur="changeBackground()" type="text" value="">
+	<script type="text/javascript">
+		function changeBackgroundFocus() {
+			document.getElementsByTagName('input')[0].style.background="red";
+		}
+		function changeBackground(){
+			document.getElementsByTagName('input')[0].style.background="yellow";
+			
+		}
+	
+	</script>
+</body>
+</html>
