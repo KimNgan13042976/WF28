@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<div class="container">
+ 
+	
+	<form name="frm">
+		<table >
+			
+			<tr>
+				<td>Họ tên </td>
+				<td>
+					<input id="input-name" type="text" name="name" placeholder="Nhập họ tên.."><span class="error" id="error-name"></span>
+
+				</td>
+			</tr>
+			<tr>
+				<td>Giới tính </td>
+				<td>
+					<input type="radio" name="gender"> Nam
+					<input type="radio" name="gender"> Nữ
+
+				</td>
+			</tr>
+			<tr>
+				<td>Email </td>
+				<td>
+					<input type="text" name="email"placeholder="Nhập email.."><span class="error" id="error-email"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Số điện thoại </td>
+				<td>
+					<input type="text" name="phone"placeholder="Nhập số điện thoại .."><span class="error" id="error-phone"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Mật khẩu</td>
+				<td>
+					<input type="password" name="matkhau"><span class="error" id="error-matkhau"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Xác nhận mật khẩu </td>
+				<td>
+					<input type="password" name="xacnhan"><span class="error" id="error-xacnhan"></span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" ><input type="button" id="btn-submit" value="Đăng ký">
+				
+				<input type="button" name="submit" value=" Xóa trắng">
+			</td>
+			</tr>
+			</table>
+		
+	</form>
+</div>
+	
+	<script type="text/javascript">
+	
+		var btn_submit = document.getElementById("btn-submit");
+		btn_submit.addEventListener('click', function(){
+			var name = document.frm.name.value;
+			var error_name = document.getElementById("error-name");
+			  var dem =0;
+			if(name==""){
+				error_name.innerHTML = "Vui lòng nhập họ tên đầy đủ";
+
+				   dem++;
+			}else if(name.length<=8){
+				error_name.innerHTML = "Tên lớn hơn 8 kí tự";
+				  dem++;
+			}else{
+				error_name.innerHTML="";
+			}
+			// if(dem==0){
+			// 	alert("Thành công");
+			// }
+			
+			var phone=document.frm.phone.value;
+			var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+			var error_phone=document.getElementById("error-phone");
+
+			
+		 if(phone!==''){
+		
+        if (vnf_regex.test(phone) == false) 
+        {
+            error_phone.innerHTML = "Số điện thoại của bạn ko hợp lệ";
+             
+             dem++;
+             
+        }else{
+            error_phone.innerHTML = "";
+             
+           }
+            
+    }else{
+        error_phone.innerHTML="Vui lòng nhập số điện thoại";
+         
+         dem++;
+         
+    }
+
+    var email=document.frm.email.value;
+    var error_email=document.getElementById("error-email")
+     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+   
+   if(email!==""){
+   	if(filter.test(email)==false){
+   		error_email.innerHTML="Email bạn nhập ko đúng ";
+   		dem++;
+   		
+   	}else{
+   		error_email.innerHTML="";
+   	}
+   		  
+   }else{
+   	error_email.innerHTML="Vui lòng nhập Email"
+   	 dem++;
+   }
+   var matkhau=document.frm.matkhau.value;
+   var error_matkhau=document.getElementById("error-matkhau");
+   
+   if(matkhau==""){
+   	error_matkhau.innerHTML="Vui lòng nhập mật khẩu";
+   	dem++;
+   	
+   }else{
+   		error_matkhau.innerHTML="";
+   		
+   		 
+   }
+   var xacnhan=document.frm.xacnhan.value;
+  
+   var error_xacnhan=document.getElementById("error-xacnhan");
+ 
+   if(xacnhan==""){
+   	 error_xacnhan.innerHTML="Vui lòng xác nhận mật khẩu";
+   	 dem++;
+   	  
+}else if(matkhau!=xacnhan){
+		 error_xacnhan.innerHTML="Mật khẩu chưa chính xác";
+		 dem++;
+		 
+}else{
+	error_xacnhan.innerHTML="";
+
+}
+
+if(dem==0){
+	alert("Thànhcông");
+}else{
+	alert("Không thành công");
+}
+
+ 
+
+});			
+		
+
+
+			
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
