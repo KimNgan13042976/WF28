@@ -6,16 +6,16 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div id="slider">
+	<div id="slider-show">
 		
-		<img class=" slice " src="images/anh1.jpg">
+		<img class=" img-slide " src="images/anh1.jpg">
 	
 	
-		<img  class="slice" src="images/anh2.jpg">
+		<img  class="img-slide" src="images/anh2.jpg">
 		
-		<img class="slice"  src="images/cooking.jpg">
+		<img class="img-slide"  src="images/cooking.jpg">
 	
-		<img class="slice"  src="images/hinh-nen-ve-cuoc-song-15.jpg">
+		<img class="img-slide"  src="images/hinh-nen-ve-cuoc-song-15.jpg">
 	
 		<button class="prev" onclick="next(-1)"> < </button>
 		<button class="next" onclick="next(1)"> > </button>
@@ -37,7 +37,7 @@
 			show(index+=n);
 		}
 		function show(n){
-			var x= document.getElementsByClassName("slice")
+			var x= document.getElementsByClassName("img-slide");
 			if(n>x.length)//khi quá số slice nó sẽ quay về ảnh đầu tiên 
 				index=1;
 			if(n<1)
@@ -50,8 +50,6 @@
 		setInterval(function(){
 			next(1);
 		},10000);
-
-
 
 
 	

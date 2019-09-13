@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<button id="addButton">Add Button</button>
+	<p>Day la the p</p>
+	<button id="ahihii">Ahihi</button>
+	<script >
+		$ (function(){
+			$("#addButton").on("click",function(){
+				$("p").after("<button id='ahihi'>Ahihi</button>");
+			});
+			$("body").on("click","#ahihi",function(){
+				alert("Ahihi");
+			})
+			$("#ahihii").click(function(){
+				alert("Ahihi truc tiep");
+			})
+		})
+	</script>
+	
+</body>
+</html>

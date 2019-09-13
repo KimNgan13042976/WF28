@@ -1,5 +1,5 @@
 
-#slider{
+#slider-show{
 	margin: 0px auto;
 	width: 600px;
 	height: 300px;
@@ -7,7 +7,7 @@
 	position: relative;
 
 }
-.slice{
+.img-slide{
 	width: 600px;
 	height: 300px;
 	display: block;

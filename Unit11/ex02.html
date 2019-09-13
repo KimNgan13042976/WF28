@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<p id ="thep"> The p</p>
+	<p id="thep2"></p>
+	<ul>
+		<li class="mb">Ha Noi</li>
+		<li class="mb">Hai Phong</li>
+		<li>Nghe An</li>
+	</ul>
+	<input type="text" id="name">
+	<script>
+		$ (function(){
+	// $('body').css("background","yellow");
+	// $('#thep').css("color","red");
+	// $('.mb').css("color","green");
+			// alert("Hello Jquery");
+			var p=$('thep').text(" ");
+			$('#thep').text("<b>thay doi the p</b>");
+			$('#thep2').html("<b>thay doi the p</b>");//doc duoc cac gia tri mk truyen vao
+			$("#name").val("Hello input");
+			alert($("#name").val());
+			// $(".mb").css({"color":"red","font-size":"20px"});
+			// alert($("ul").width());
+			// alert($("ul").height());
+			// $("#thep").remove();
+			$("#thep").remove();
+			$("#thep2").empty();
+			$("h1").prepend("Day la");
+			$("h1").append(" hiihi");
+
+
+
+
+		})
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<style >
+		.red{
+			color: red;
+
+		}
+		.size{
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<button id="addClass">AddClass</button>
+	<button id="removeClass">RemoveClass</button>
+	<button id="toggleClass">ToggleClass</button>
+	<p>Day la the p</p>
+	<script >
+		$(function(){
+			$("#addClass").on("click",function(){
+				$("p").addClass("red size");
+			});
+			$("#removeClass").on("click",function(){
+				$("p").removeClass("red size");
+			});
+			$("#toggleClass").on("click",function(){
+				$("p").toggleClass("red size");
+			});
+
+		})
+	</script>
+</body>
+</html>
