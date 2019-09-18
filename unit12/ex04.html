@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<button id='show'>Show</button>
+	<button id='hide'>Hide</button>
+	<button id='toggle'>Toggle</button>
+	<button id='fadeIn'>Fade In</button>
+	<button id='fadeOut'>Fade Out</button>
+	<button id='fadeToggle'>Togggle</button>
+
+	<button id='slidedown'>SlideDown</button>
+	<button id='slideup'>SlideUp</button>
+	<button id='slidetoggle'>SlideToggle</button>
+	<button id='stop'>Stop</button>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni molestias aspernatur provident iusto voluptatem. Perferendis sint quisquam facere laborum velit.</p>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$('#show').click(function(){
+				$('div').show();
+			});
+			$('#hide').click(function(){
+				$('div').hide();
+			});
+			$('#toggle').click(function(){
+				$('div').toggle();
+			});
+			$('#fadeIn').click(function(){
+				$('div').fadeIn(3000);
+			});
+			$('#fadeOut').click(function(){
+				$('div').fadeOut(5000);
+			});
+				$('#slidedown').click(function(){
+				$('div').slideDown();
+			});
+					$('#slideup').click(function(){
+				$('div').slideUp();
+			});
+				$('#slidetoggle').click(function(){
+				$('div').slideToggle();
+			});
+				$('#stop').click(function(){
+				$('div').stop();
+			});
+		});
+	</script>
+</body>
+</html>

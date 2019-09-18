@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates animi cupiditate omnis voluptatibus, ipsam eaque. Totam nemo nam iste officiis!</p>
+	</div>
+	<div class="change">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates animi cupiditate omnis voluptatibus, ipsam eaque. Totam nemo nam iste officiis!</p>
+	</div>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates animi cupiditate omnis voluptatibus, ipsam eaque. Totam nemo nam iste officiis!</p>
+	</div>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates animi cupiditate omnis voluptatibus, ipsam eaque. Totam nemo nam iste officiis!</p>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			// $('div').first().css('background','yellow');// lấy vi trí div dầu tiên 
+			// $('div').last().css('background','red');// lấy vi trí div cuối cùng
+			// $('div').eq(2).css('background','green');// lấy vi trí div 3 nhưng phải truyền vị trí vào 
+			$('div').filter('.change').css('background','pink');//lấy vị trí lớp div có tên là change 
+			// $('div').not('.change').css('background','pink');// ngoai trừ class change
+
+
+		})
+	</script>
+</body>
+</html>

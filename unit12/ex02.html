@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		*{
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<p>Thẻ p 1</p>
+	<p class="thep2">Thẻ p 2</p>
+	<h3>Thẻ h3</h3>
+	<p>Thẻ p 3</p>
+	<p>Thẻ p 4</p>
+	<script type="text/javascript">
+		$(function(){
+			$('h3').next().css('color','red');
+			$('h3').prev().css('color','blue');
+			$('h3').siblings().css('color','green');
+			$('h3').siblings(".thep2").css('color','yellow');
+
+		})
+	</script>
+</body>
+</html>
