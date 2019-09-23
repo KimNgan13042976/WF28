@@ -1,0 +1,233 @@
+html, body{
+	width: 100%;
+	height: 100%;
+
+}
+.navbar{
+	background-color: white;
+}
+.toggler{
+	background-color: white;
+	border-color: black;
+
+}
+.navbar-branch {
+	width: 30%;
+	color: red;
+	text-transform: uppercase;
+}
+.navbar li a {
+	text-transform: uppercase;
+}
+
+.container-fluid {
+    width: 100%;
+    /*padding-right: 15px; 
+     padding-left: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar li a:hover{
+	color:blue !important;
+}
+.anh{
+	width: 100%;
+	height: 500px;
+}
+.anh img{
+	width: 100%;
+	height: 100%;
+}
+.left {
+    width: 97%;
+    height: 20%;
+    top: 1%;
+   
+    position: absolute;
+}
+.left .h1{
+	width: 50%;
+    height: 100%;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 3%;
+}
+
+.h1{
+	font-size: 30px;
+}
+
+		
+.left p{
+	
+    width: 70%;
+    height: 40%;
+    color: white;
+    margin-top: 6%;
+}
+.btn-primary {
+	
+	margin-top:4%;
+}
+.main-top{
+	background-color: red;
+	height: 450px;
+}
+.main-top1{
+	position: absolute;
+    width: 100%;
+    height: 20%;
+    margin-top: 7%;
+}
+h3{
+	
+	color: white;
+}
+p{
+	width: 70%;
+	height: 30%;
+	color: white;
+	margin-top: 5%;
+}
+.btn-primarya{
+	background-color: white;
+	color: black;
+	margin-top:9%;
+}
+h4{
+	margin-top: 5%;
+}
+.box{
+
+	margin-top: 7%;
+	padding-left: 3% !important;
+	padding-right: 3% !important;
+}
+.icon{
+	font-size: 60px;
+	color:red;
+	margin: 15px;
+}
+.big{
+	height: 13%;
+	margin-left: 21%;
+    color: black;
+    font-size: 20px;
+}
+.small{
+	color: black;
+	font-size: 15px;
+	margin-left: 19%;
+
+}
+#portfolio{
+	margin-top:7%;
+
+}
+.img-fluid{
+	width: 100%;
+
+}
+.freeboostrap{
+	width: 100%;
+	height: 300px;
+	background-color: black;
+
+
+}
+.free{
+	color: white;
+	margin-top: 5%;
+	position: absolute;
+	margin-top: 10%;
+	margin-left: 30%;
+
+}
+
+.btn-primaryb{
+	background-color: white;
+	color: black;
+	margin-top:22%;
+	margin-left: 45%;
+	 text-transform: uppercase;
+}
+.box2{
+	margin-left: 5% !important;
+    margin-right: 5% !important;
+}
+
+.footer-top{
+	background-color: white;
+	height: 250px;
+}
+.footer-top1{
+	position: absolute;
+    width: 100%;
+    height: 20%;
+    margin-top: 7%;
+}
+h3{
+	
+	color: black;
+}
+p{
+	width: 70%;
+	height: 30%;
+	color: black;
+	margin-top: 5%;
+}
+.box3{
+	margin-top: 7%;
+	padding-left: 5% !important;
+	padding-right: 5% !important;
+}
+.phone{
+
+	font-size: 40px;
+}
+.big1{
+	margin-left: 39%;
+}
+.big2{
+	margin-left: 27%;
+	color: red;
+}
+@media screen and (min-width: 321px) and (max-width: 760px){
+	.left .h1{
+	width: 80%;
+    height: 100%;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 3%;
+}
+	.left p{
+	
+    width: 70%;
+    height: 40%;
+    color: white;
+    margin-top: 16%;
+}
+.btn-primary {
+	
+	margin-top:38%;
+}
+h3{
+	width: 70%;
+}
+.btn-primarya{
+	background-color: white;
+	color: black;
+	margin-top:60%;
+}
+	.free{
+		width: 70%;
+		    margin-left: 15%;
+	}
+	.btn-primaryb {
+    background-color: white;
+    color: black;
+    margin-top: 49%;
+    margin-left: 28%;
+    text-transform: uppercase;
+}
+}
